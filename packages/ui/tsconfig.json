@@ -1,0 +1,20 @@
+{
+  "extends": "@repo/typescript-config/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist",
+
+    /* shadcn/ui */
+    "baseUrl": ".",
+    "paths": {
+      "@repo/ui/lib/*": [
+        "./src/lib/*"
+      ],
+      "@repo/ui/*": [
+        "./src/*"
+      ]
+    }
+
+  },
+  "include": ["src", "tailwind.config.ts", "turbo"],
+  "exclude": ["node_modules", "dist"]
+}
